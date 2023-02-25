@@ -15,21 +15,21 @@ int main()
     cin >> n;
     }while (n < MINN || n > MAXN );
     
-     for(int i = n; i>0; i--) {
+      for(int i = n; i>1; i--) {
          for(int j = n; j>i; j--){
              cout << " ";
          }
-         for(int j = 0; j<(2*i-1); j++){
+         for(int j = (2*i-1); j>0; j--){
              cout << "*";
          }
        cout << endl;
      }
-     
-     for(int i = 1; i<=n; i++) {
+    
+    for(int i = 1; i<=n; i++) {
          for(int j = n; j>i; j--){
              cout << " ";
          }
-       for(int w=1; w<=2*i-1; w++){
+       for(int w=2*i-1; w>=1; w--){
            cout << "*";
        }
        cout << endl;
