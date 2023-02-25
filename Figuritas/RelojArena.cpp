@@ -23,7 +23,7 @@ int main()
     
     
      for(int i = mitad; i>1; i--) {
-         for(int j = n; j>i; j--){
+         for(int j = mitad; j>i; j--){
              cout << " ";
          }
          for(int j = (2*i-1); j>0; j--){
@@ -33,7 +33,7 @@ int main()
      }
     
     for(int i = 1; i<=mitad; i++) {
-         for(int j = n; j>i; j--){
+         for(int j = mitad; j>i; j--){
              cout << " ";
          }
        for(int w=2*i-1; w>=1; w--){
