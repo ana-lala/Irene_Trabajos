@@ -45,7 +45,7 @@ int main()
          cout << endl;
      }
      
-     for(int i = mitad-3; i>0; i--){
+     for(int i = mitad-2; i>0; i--){
         cout << "*";
          for(int j= 2; j<=i; j++){
              cout << " ";
