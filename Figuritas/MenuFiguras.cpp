@@ -10,6 +10,7 @@ int main()
     int opc;
     cout<<"Este programa imprime las siguientes figuras rellenas y huecas \n \n";
     
+    while(opc!=10){
     cout << "________________________________________________________________ \n";
     cout << "|                                                              |\n";
     cout << "|  Elige la opci\242n de la figura que quieres imprimir:          |\n";                                                     
@@ -22,6 +23,7 @@ int main()
     cout << "|   7: Una Copa Rellena                                        |\n";
     cout << "|   8: Una Copa Vacio                                          |\n";
     cout << "|   9: Todas las figuras                                       |\n";
+    cout << "|   10: Salir                                                  |\n";
     cout << "|                                                              |\n";
     do{
         if(cin.fail()){
@@ -30,8 +32,14 @@ int main()
         }
         cout << "|  Pon tu opci\242: ";
         cin >> opc;
-    }while((opc!=1 && opc!=2 &&opc!=3 &&opc!=4 &&opc!=5 &&opc!=6 &&opc!=7 &&opc!=8 &&opc!=9) || cin.fail());
+    }while((opc!=1 && opc!=2 &&opc!=3 &&opc!=4 &&opc!=5 &&opc!=6 &&opc!=7 &&opc!=8 &&opc!=9 && opc!=10) || cin.fail());
     
-    cout << "________________________________________________________________";
+    cout << "________________________________________________________________\n";
+    
+    if(opc==10){
+        cout << "\nGracias por usar el programa :D";
+        continue;
+    }
+    }
     return 0;
 }
