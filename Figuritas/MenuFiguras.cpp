@@ -64,6 +64,7 @@ int main()
     //ENUMERAR figuras
     
     switch(opc){
+        case 9:
         case 1: //RELOJ DE ARENA RELLENO
             for(int i = mitad; i>1; i--) {
                  for(int j = mitad; j>i; j--){
@@ -84,7 +85,11 @@ int main()
                }
                cout << endl;
              }
-            break;
+             cout << endl;
+            if(opc==1){
+                break;
+            }
+            
         case 2: //RELOJ DE ARENA VACIO
                 for(int i = 0; i<n; i++){
                     cout << simbolo;
@@ -121,7 +126,11 @@ int main()
                     cout << simbolo;
                 }
                 cout << endl;
-            break;
+                cout << endl;
+            if(opc==2){
+                break;
+            }
+            
         case 3: //Rombo Relleno    
                 for(int i = 1; i<mitad; i++) {
                      for(int j = mitad; j>i; j--){
@@ -143,7 +152,11 @@ int main()
                      }
                    cout << endl;
                  }
-            break;
+                 cout << endl;
+            if(opc==3){
+                break;
+            }
+            
         case 4: //Rombo Vacio    
                 for(int i = 1; i<mitad; i++){
                     cout << " ";
@@ -183,7 +196,11 @@ int main()
                     cout << " ";
                 }
                 cout << simbolo << endl;
-            break;
+                cout << endl;
+            if(opc==4){
+                break;
+            }
+            
         case 5: //Moño Relleno
                 for(int i = 0; i<mitad; i++){
                      for(int j= 0; j<=i; j++){
@@ -210,7 +227,11 @@ int main()
                      }
                      cout << endl;
                  }
-            break;
+                 cout << endl;
+            if(opc==5){
+                break;
+            }
+            
         case 6: //Moño Vacio
                         cout << simbolo;
                 for(int j= 1; j<n; j++){
@@ -258,7 +279,11 @@ int main()
                              cout << " ";
                          }
                     cout << simbolo << endl;
-            break;
+                    cout << endl;
+            if(opc==6){
+                break;
+            }
+            
         case 7: //Copa Rellena
                 for(int i = mitad; i>0; i--) {
                      for(int j = mitad; j>i; j--){
@@ -281,7 +306,11 @@ int main()
                 for(int j = (2*mitad-1); j>0; j--){
                          cout << simbolo;
                      }
-            break;
+                     cout << endl << endl;
+            if(opc==7){
+                break;
+            }
+            
         case 8: //Copa Vacia
                 for(int i = 0; i<n; i++){
                     cout << simbolo;
@@ -311,12 +340,10 @@ int main()
                 for(int j = (2*mitad-1); j>0; j--){
                          cout << simbolo;
                      }
-                     
-            break;
-        case 9: //Todas las figuras
-            cout << "En proceso";
-            break;
-        
+                     cout << endl ;
+            if(opc==8){
+                break;
+            }
     }
     
     }
