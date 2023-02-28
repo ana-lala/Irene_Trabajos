@@ -13,10 +13,15 @@ int main()
     cout << "________________________________________________________________ \n";
     cout << "|                                                              |\n";
     cout << "|  Elige la opci\242n de la figura que quieres imprimir:          |\n";                                                     
-    cout << "|   1: Reloj de arena                                          |\n";
-    cout << "|   2: Rombo                                                   |\n";
-    cout << "|   3: Mo\244o                                                    |\n";
-    cout << "|   4: Una Copa                                                |\n";
+    cout << "|   1: Reloj de arena Relleno                                  |\n";
+    cout << "|   2: Reloj de arena Vacio                                    |\n";
+    cout << "|   3: Rombo Relleno                                           |\n";
+    cout << "|   4: Rombo Vacio                                             |\n";
+    cout << "|   5: Mo\244o Relleno                                            |\n";
+    cout << "|   6: Mo\244o Vacio                                              |\n";
+    cout << "|   7: Una Copa Rellena                                        |\n";
+    cout << "|   8: Una Copa Vacio                                          |\n";
+    cout << "|   9: Todas las figuras                                       |\n";
     cout << "|                                                              |\n";
     do{
         if(cin.fail()){
@@ -25,7 +30,7 @@ int main()
         }
         cout << "|  Pon tu opci\242: ";
         cin >> opc;
-    }while((opc!=1 && opc!=2 &&opc!=3 &&opc!=4) || cin.fail());
+    }while((opc!=1 && opc!=2 &&opc!=3 &&opc!=4 &&opc!=5 &&opc!=6 &&opc!=7 &&opc!=8 &&opc!=9) || cin.fail());
     
     cout << "________________________________________________________________";
     return 0;
